@@ -1,0 +1,26 @@
+/* Regular @import url statements work as you'd expect them to -- alternatively
+you can import locally, and they wind up in the resulting bundle */
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Roboto");
+@import "./variables.global.scss";
+@import "./mixins.global.scss";
+
+html {
+  padding: 0;
+  border: 0;
+  font-size: $default-font-size;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  body {
+    background-color: $default-background-color;
+    color: $default-font-color;
+    font-family: $monospaced-font-family;
+    height: 100%;
+    width: 100%;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+}
