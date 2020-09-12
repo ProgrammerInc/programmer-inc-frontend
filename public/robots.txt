@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://programmer.inc/sitemap.xml
