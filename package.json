@@ -1,5 +1,20 @@
 {
   "name": "programmer-inc-client",
+  "description": "Programmer Incorporated Website Client",
+  "author": {
+    "name": "Programmer Incorporated",
+    "email": "programmer.incorporated@gmail.com",
+    "url": "https://programmer.inc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgrammerInc/programmer-inc-client.git"
+  },
+  "license": "MIT",
+  "homepage": "https://programmer.inc",
+  "bugs": {
+    "url": "https://github.com/ProgrammerInc/programmer-inc-client/issues"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -18,5 +33,12 @@
     "@types/node": "^14.10.1",
     "@types/react": "^16.9.49",
     "typescript": "^4.0.2"
-  }
+  },
+  "keywords": [
+    "programmer inc",
+    "programmer",
+    "incorporated",
+    "website",
+    "client"
+  ]
 }
