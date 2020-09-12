@@ -27,6 +27,18 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/static/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177858408-1"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'UA-177858408-1');
+                `,
+            }}
+          />
         </Head>
         <body>
           <Main />
