@@ -8,7 +8,9 @@ interface LinkType {
 }
 
 const links: LinkType[] = [
-  { key: null, href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
+  { key: null, href: 'https://programmer.blog', label: 'Blog' },
+  { key: null, href: 'https://github.com/ProgrammerInc', label: 'Github' },
+  { key: null, href: 'https://twitter.com/ProgrammerInc', label: 'Twitter' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -54,7 +56,7 @@ const Nav = () => (
         padding: 6px 8px;
       }
       a {
-        color: #067df7;
+        color: #fff;
         text-decoration: none;
         font-size: 13px;
       }
