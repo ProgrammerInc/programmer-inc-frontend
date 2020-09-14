@@ -2,10 +2,7 @@
 @import "../global/variables.global.scss";
 
 .programmer-home {
-  min-height: 100vh; // height of the browser viewport
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 
   p {
     font-size: 0.85rem;
@@ -14,6 +11,10 @@
       font-size: 1rem;
     }
   }
+}
+
+.programmer-blog {
+  padding: 1.5rem;
 }
 
 .shell-form {

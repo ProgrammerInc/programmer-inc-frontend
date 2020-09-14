@@ -8,7 +8,7 @@ interface LinkType {
 }
 
 const links: LinkType[] = [
-  { key: null, href: 'https://programmer.blog', label: 'Blog' },
+  { key: null, href: '/blog', label: 'Blog' },
   { key: null, href: 'https://github.com/ProgrammerInc', label: 'Github' },
   { key: null, href: 'https://twitter.com/ProgrammerInc', label: 'Twitter' }
 ].map(link => {
@@ -16,11 +16,11 @@ const links: LinkType[] = [
   return link
 })
 
-const Nav = () => (
+const Nav = ({ categories }) => (
   <nav>
     <ul>
       <li>
-        <Link prefetch href="/">
+        <Link href="/">
           <a>Home</a>
         </Link>
       </li>
@@ -47,8 +47,10 @@ const Nav = () => (
       ul {
         display: flex;
         justify-content: space-between;
+        margin-top: 0px;
       }
       nav > ul {
+        margin-top: 0px;
         padding: 4px 16px;
       }
       li {
