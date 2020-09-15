@@ -1,6 +1,8 @@
 {
-  "name": "programmer-inc-client",
-  "description": "Programmer Incorporated Website Client",
+  "name": "programmer-inc-frontend",
+  "description": "Programmer Incorporated Website Front-End",
+  "private": true,
+  "version": "0.1.0",
   "author": {
     "name": "Programmer Incorporated",
     "email": "programmer.incorporated@gmail.com",
@@ -8,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProgrammerInc/programmer-inc-client.git"
+    "url": "git+https://github.com/ProgrammerInc/programmer-inc-frontend.git"
   },
   "license": "MIT",
   "homepage": "https://programmer.inc",
   "bugs": {
-    "url": "https://github.com/ProgrammerInc/programmer-inc-client/issues"
+    "url": "https://github.com/ProgrammerInc/programmer-inc-frontend/issues"
   },
   "scripts": {
     "dev": "next",
