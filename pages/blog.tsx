@@ -9,10 +9,10 @@ import { getArticles, getCategories } from '../lib/api'
 const Blog = ({ articles, categories }) => {
   return (
     <div>
-      <Head title="Blog" />
+    <Head title="&lt;programmer&gt;.blog" description="nothing to see here, move along." />
       <Nav categories={categories} />
       <div className="programmer-blog">
-        <h1>Blog</h1>
+        <h1>&lt;programmer&gt;.blog</h1>
         <Articles articles={articles} />
       </div>
     </div>

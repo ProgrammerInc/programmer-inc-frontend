@@ -4,7 +4,7 @@ import Nav from './nav'
 const Layout = ({ children, categories }) => (
   <>
     <Head>
-      <title>Blog</title>
+      <title>&lt;programmer&gt;.blog</title>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Staatliches"
