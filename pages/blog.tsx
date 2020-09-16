@@ -3,16 +3,17 @@ import * as React from 'react'
 import Head from '../components/head'
 import Nav from '../components/nav'
 import Articles from '../components/articles';
+import ShellForm from '../components/shell/form'
 
 import { getArticles, getCategories } from '../lib/api'
 
 const Blog = ({ articles, categories }) => {
   return (
     <div>
-    <Head title="&lt;programmer&gt;.blog" description="nothing to see here, move along." />
+      <Head title="&lt;programmer&gt;.blog" description="nothing to see here, move along." />
       <Nav categories={categories} />
       <div className="programmer-blog">
-        <h1>&lt;programmer&gt;.blog</h1>
+        <ShellForm content="blog" size="small" />
         <Articles articles={articles} />
       </div>
     </div>

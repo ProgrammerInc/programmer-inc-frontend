@@ -1,12 +1,5 @@
-// ----------------------------------------------------------------------------
-// IMPORTS
-
-/* Yarn */
 import * as React from 'react'
 
-/* Local */
-
-// ----------------------------------------------------------------------------
 export interface IShellOutputProps {
   content: string | null
 }

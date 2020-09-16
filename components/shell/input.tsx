@@ -1,12 +1,4 @@
-// ----------------------------------------------------------------------------
-// IMPORTS
-
-/* Yarn */
 import * as React from 'react'
-
-/* Local */
-
-// ----------------------------------------------------------------------------
 
 export interface IShellInputProps {
   keyDownEvent: (event: any) => void
