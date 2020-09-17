@@ -1,23 +1,22 @@
 import * as React from 'react'
 
-import Head from '../components/head'
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 import ShellForm from '../components/shell/form'
 
 import { getCategories } from '../lib/api'
 
 const Home = ({ categories }) => {
   return (
-    <div className="programmer-home">
-      <Head title="&lt;programmer&gt;._" description="nothing to see here, move along." />
-      <Nav categories={categories} />
-      <div className="flex-center">
-        <div className="programmer-logo">
-          <ShellForm />
-          <p>It's not a bug - it's an undocumented feature.</p>
+    <Layout categories={categories}>
+      <div className="programmer-home">
+        <div className="flex-center">
+          <div className="programmer-logo">
+            <ShellForm />
+            <p>It's not a bug - it's an undocumented feature.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
