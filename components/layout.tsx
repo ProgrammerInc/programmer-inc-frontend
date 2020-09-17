@@ -20,8 +20,6 @@ interface ILayoutProps {
 const Layout = ({ title, description, url, ogImage, children, categories }: ILayoutProps) => {
   const isDarkMode = useMedia('(prefers-color-scheme: dark)');
 
-  console.log(isDarkMode)
-
   return (
     <>
       <Head>
