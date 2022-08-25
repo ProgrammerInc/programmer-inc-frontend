@@ -13,8 +13,23 @@
   }
 }
 
-.programmer-blog {
+.programmer-blog, .programmger-contact {
   padding: 1.5rem;
+}
+
+.programmer-contact {
+  min-height: calc(90vh - 50px);
+  padding-top: 50px;
+  text-align: center;
+}
+
+.programmer-privacy, .programmer-terms {
+  padding: 1.5rem;
+  font-size: 16px;
+
+  li {
+    font-size: 16px;
+  }
 }
 
 .shell-form {

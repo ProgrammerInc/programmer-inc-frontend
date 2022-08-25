@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import useMedia from 'use-media';
+import Footer from './footer';
 
 import Nav from './nav'
 
@@ -112,8 +113,9 @@ const Layout = ({ title, description, url, ogImage, children, categories }: ILay
           }}
         />
       </Head>
-      <Nav categories={categories} />
+      <Nav />
       {children}
+      <Footer />
     </>
   )
 }
