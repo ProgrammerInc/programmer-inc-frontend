@@ -8,7 +8,6 @@ interface LinkType {
 }
 
 const links: LinkType[] = [
-  { key: null, href: 'https://programmer.sh', label: 'Search' },
   { key: null, href: 'https://github.com/ProgrammerInc', label: 'Github' },
   { key: null, href: 'https://twitter.com/ProgrammerInc', label: 'Twitter' },
   { key: null, href: '/contact', label: 'Contact' }
@@ -23,6 +22,11 @@ const Nav = () => (
       <li>
         <Link href="/">
           <a>Home</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="https://programmer.sh">
+          <a>Search</a>
         </Link>
       </li>
       <ul>
