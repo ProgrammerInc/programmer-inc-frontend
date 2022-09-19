@@ -2,12 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 
 interface LinkType {
+  className?: string
   key?: string | null
   href: string
   label: string
+  title?: string
 }
 
 const links: LinkType[] = [
+  { key: null, href: '#', label: 'Blog', className: 'disabled', title: 'Coming soon' },
   { key: null, href: 'https://github.com/ProgrammerInc', label: 'Github' },
   { key: null, href: 'https://twitter.com/ProgrammerInc', label: 'Twitter' },
   { key: null, href: '/contact', label: 'Contact' }
@@ -32,10 +35,10 @@ const Nav = () => (
       </li>
       </ul>
       <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
+        {links.map(({ className, key, href, label, title }) => (
+          <li key={key} className={className ? className : ''}>
             <Link href={href}>
-              <a>{label}</a>
+              <a title={title ? title : label}>{label}</a>
             </Link>
           </li>
         ))}

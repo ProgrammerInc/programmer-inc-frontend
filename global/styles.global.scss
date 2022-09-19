@@ -29,6 +29,10 @@ html {
     font-size: 2rem;
   }
 
+  .disabled > a {
+    cursor: not-allowed;
+  }
+
   .flex {
     display: flex;
   }
