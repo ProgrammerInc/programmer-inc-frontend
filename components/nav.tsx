@@ -19,6 +19,7 @@ const links: LinkType[] = [
 const Nav = () => (
   <nav>
     <ul>
+      <ul className="flex">
       <li>
         <Link href="/">
           <a>Home</a>
@@ -29,6 +30,7 @@ const Nav = () => (
           <a>Search</a>
         </Link>
       </li>
+      </ul>
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>
